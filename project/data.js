@@ -76,13 +76,13 @@ app.post('/signup_form', async (req, res) => {
           port: 465,
           secure: true,
           auth: {
-              user: 't4794165@gmail.com',
-              pass: 'lhinxiwqwbclowmb'
+              user: // Mail ID,
+              pass: // passkey get from Gmail in data and Privacy
           }
       });
 
       await transporter.sendMail({
-          from: 't4794165@gmail.com',
+          from: // enter mail from which you will send,
           to: email,
           subject: 'Verification Code for Signup',
           text: `Your verification code is: ${verificationCode}`
@@ -134,8 +134,8 @@ app.post('/forgot_form', async (req, res) => {
               port: 465,
               secure: true,
               auth: {
-                  user: 't4794165@gmail.com',
-                  pass: 'lhinxiwqwbclowmb'
+                  user: // Mail Id,
+                  pass: // passkey get from Gmail in data and Privacy
               }
           });
 
@@ -215,13 +215,13 @@ app.post('/message_form', async (req, res)=>{
       port: 465,
       secure: true,
       auth: {
-          user: 't4794165@gmail.com',
-          pass: 'lhinxiwqwbclowmb'
+          user: // Mail Id,
+          pass: // passkey get from Gmail in data and Privacy
       }
   });
 
   await transporter.sendMail({
-      from: 't4794165@gmail.com',
+      from: // Mail Id,
       to: email,
       subject: 'Response submitted for Data Analysis',
       text: `Your message sent to Data Analysis is: ${message}`
