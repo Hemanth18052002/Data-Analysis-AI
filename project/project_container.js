@@ -10,37 +10,6 @@ function check(){
     nameElement.innerText = "Hi " + username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
 }
 
-
-// const addButton = document.getElementById("add_project_button");
-// const project_container = document.getElementById("add_cont")
-// document.getElementById("add_project_button").addEventListener("click", newdivfun);
-
-// function newdivfun()
-// {
-//     const newdiv = document.createElement("div");
-//     console.log("added");
-//     newdiv.classList.add('template');
-//     project_container.appendChild(newdiv);
-
-//     const renameDiv = document.createElement("div");
-//     renameDiv.classList.add('rename');
-//     renameDiv.innerText = "Project";
-//     newdiv.appendChild(renameDiv);
-
-//     renameDiv.addEventListener('dblclick', function () {
-//         var newName = prompt('Enter a new name:');
-//         if (newName !== null) {
-//             renameDiv.innerText = newName;
-//         }
-//     });
-
-//     renameDiv.addEventListener('click',function(){
-//         setTimeout(function() {
-//             window.location.href = 'analysis.html';
-//         }, 1000);
-//     });
-// }
-    // window.location.href = 'analysis.html';
 document.getElementById('add_button').addEventListener('click', function(){
     var tempdiv = document.querySelector('.templ1');
     var newDiv = tempdiv.cloneNode(true);
@@ -49,7 +18,6 @@ document.getElementById('add_button').addEventListener('click', function(){
 });
 var enter_button = document.getElementById('enter_button');
 enter_button.addEventListener('click', function(){
-    console.log("posa");
     window.location.href = 'http://127.0.0.1:5003/';
 });
 
