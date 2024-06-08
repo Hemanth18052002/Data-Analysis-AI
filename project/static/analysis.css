@@ -1,0 +1,171 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F0EEE5;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #338CE5;
+}
+
+#navbar{
+    margin: 2px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    padding-left: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.9px;
+    box-shadow: -10px 5px 5px rgba(0,0,0,0.3);
+}
+
+.ground{
+    margin: 5px;
+    margin-right: 6px;
+    padding: 2px;
+    padding-bottom: 5px;
+    width: 100vw;
+    height: 79vh;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: -30px 5px 20px rgba(0,0,0,0.3);
+}
+.heading{
+    font-size:x-large;
+    text-decoration: underline;
+    color: #000000;
+}
+
+#fileInput {
+    display: none;
+}
+#selectText {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+#fileName {
+    color: blue;
+    cursor: pointer;
+}
+#fileName:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+.myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 70vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.closeModal {
+    position: relative;
+    right: 5px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeModal:hover, .closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.downloadFile {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.downloadFile:hover {
+    background-color: #45a049;
+}
+
+.d1, .d2, .d3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.dataInformationBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+#info, #desc{
+    width: 45vw;
+    height: 69vh;
+    overflow: scroll;
+}
+
+#loadingIndicator {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#rmsuccess{
+    color: green;
+}
+#Progress{
+    color: red;
+}

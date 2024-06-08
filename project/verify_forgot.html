@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        window.onload = function() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const email = urlParams.get('email');
+            console.log(email);
+            if (email) {
+                const verificationForm = document.getElementById('verificationForm');
+                document.getElementById('email').value = decodeURIComponent(email);
+            } else {
+                alert('Enter Valid email id______');
+                window.location.href = 'http://127.0.0.1:5501/webdev_project/project/verify.html?email=${email}';
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="verify">
+        <form id="verificationForm" action="http://localhost:3000/verify_forgot" method="post">
+            <input type="hidden" id="email" name="email">
+            <h2>Verification</h2>
+            <br>
+            <input type="text" name="verification_code_forgot" required placeholder="Verification Code">
+            <br>
+            <button type="submit">Verify</button>
+        </form>
+    </div>  
+
+    
+</body>
+</html>

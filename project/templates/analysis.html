@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Preview</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='analysis.css') }}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <h1>Data Analysis</h1>
+    </div>
+
+    <div class="ground d1">
+        <div class="heading">Data Collection</div>
+        <div id="fileselect">
+            <label for="fileInput" id="selectText">Select the file</label>
+            which is in the format of excel or csv
+            <input type="file" id="fileInput" accept=".xlsx, .csv" class="updateFileName"/>
+            <span id="fileName" class="previewFile"></span>
+        </div>
+        
+        <div class="myModal">
+            <div class="modalContent">
+                <span class="closeModal">&times;</span>
+                <div id="loadingIndicator" style="display: none;">Loading...</div>
+                <table class="previewTable"></table>
+                <button class="downloadFile">Download</button>
+            </div>
+        </div>
+        <button id="DCNext" class="button b1">Save and Next</button>
+    </div>
+
+    <div class="ground d2">
+        <div class="heading">Data Inspection</div>
+        
+        <div class="myModal">
+            <div class="modalContent">
+                <span class="closeModal">&times;</span>
+                <div id="loadingIndicator" style="display: none;">Loading...</div>
+                <table class="previewTable"></table>
+                <button class="downloadFile">Download</button>
+            </div>
+        </div>
+        <div class="dataInformationBody">
+            <div id='info'></div>
+            <div id='desc'></div>
+        </div>
+        <div>
+            <button class="button pb1">Preview</button>
+            <button id="DINext" class="button b2">Save and Next</button>
+        </div>
+    </div>
+
+    <div class="ground d3 ds3">
+        <div class="heading">Data Cleaning</div>
+        
+        <div class="myModal">
+            <div class="modalContent">
+                <span class="closeModal">&times;</span>
+                <div id="loadingIndicator" style="display: none;">Loading...</div>
+                <table class="previewTable"></table>
+                <button class="downloadFile">Download</button>
+            </div>
+        </div>
+        <div id="rmsuccess"></div>
+        <div>
+            <button class="button pb2">Preview</button>
+            <button id="DClNext" class="button b3">Save and Next</button>
+        </div>
+        
+    </div>
+
+    <div class="ground d4">
+        <div class="heading">Data Visualization</div>
+        
+        <div class="myModal">
+            <div class="modalContent">
+                <span class="closeModal">&times;</span>
+                <div id="loadingIndicator" style="display: none;">Loading...</div>
+                <table class="previewTable"></table>
+                <button class="downloadFile">Download</button>
+            </div>
+        </div>
+        <div id="Progress">Project Still in Progress...</div>
+        <div>
+            <button class="button pb3">Preview</button>
+            <button class="button b4">Save and Next</button>
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='analysis.js') }}"></script>
+</body>
+</html>

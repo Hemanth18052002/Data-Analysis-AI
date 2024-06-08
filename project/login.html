@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <div class="login">
+        <form action="http://localhost:3000/login_form" method="post">
+            <h2>Login</h2>
+
+            <div class="username">
+                <input type="text" id="nee" name="username" placeholder="username"/>
+                <br>
+                <input name="password" type="password" placeholder="password">
+            </div>
+
+            <div class="remember">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#" class="forgotlink">forgot password</a>
+            </div>
+
+            <div class="butt">
+                <button>Login</button>
+            </div>
+        </form>
+
+        <div class="signup1">
+            <p>Don't have an account?
+                <a href="#" class="signuplink"> Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="signup">
+        <form action="http://localhost:3000/signup_form" method="post">
+            <h2>SignUp</h2>
+
+            <div class="username">
+                <input name="email" type="email" placeholder="email">
+                <br>
+                <input name="username" type="text" placeholder="username">
+                <br>
+                <input name="password" type="password" placeholder="password">
+            </div>
+
+            <div class="butt">
+                <button>Sign up</button>
+            </div>
+        </form>
+        <div class="login1">
+            <p>Already have an account?
+                <a href="#" class="loginlink"> Login</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="forgot">
+        <form action="http://localhost:3000/forgot_form" method="post">
+            <h2>Forgot Password</h2>
+
+            <div class="username">
+                <input type="email" placeholder="enter email id" name="email">
+            </div>
+
+            <div class="butt">
+                <button>Submit</button>
+            </div>
+        </form>
+        <div class="forgot1">
+            <p>Already have an account?
+                <a href="#" class="floginlink"> Login</a>
+            </p>
+            <p>Don't have an account?
+                <a href="#" class="fsignuplink"> Signup</a>
+            </p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

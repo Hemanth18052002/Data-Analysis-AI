@@ -1,0 +1,48 @@
+.project_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.template{
+    margin: 18px;
+    width: 150px;
+    height: 150px;
+    box-shadow: -10px 8px 20px rgba(0,0,0,0.3);
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(74, 68, 74);
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.template .rename{
+    position: relative;
+    top: 2.2em;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-style: none;
+    height: 2rem;
+    overflow: hidden;
+    width: 148px;
+    text-align: center;
+}
+.template .rename:hover{
+    text-decoration: underline;
+    color: blue;
+}
+button{
+    width: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+}
+box-icon{
+    width: 30px;
+    height: 30px;
+}
+#add_project_button:hover{
+    cursor: pointer;
+}

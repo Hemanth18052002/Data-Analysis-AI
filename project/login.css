@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('login_img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: whitesmoke; */
+    
+}
+.login{
+    position: absolute;
+    width: 30vw;
+    height: 370px;
+    border-style: solid;
+    border-color: aliceblue;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-width: 1px;
+    box-shadow: 15px 15px 15px;
+    border-radius: 15px;
+}
+.signup{
+    position: absolute;
+    width: 30vw;
+    height: 370px;
+    border-style: solid;
+    border-color: aliceblue;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-width: 1px;
+    box-shadow: 15px 15px 15px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.forgot{
+    position: absolute;
+    width: 30vw;
+    height: 370px;
+    border-style: solid;
+    border-color: aliceblue;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-width: 1px;
+    box-shadow: 15px 15px 15px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.verify{
+    position: absolute;
+    width: 30vw;
+    height: 370px;
+    border-style: solid;
+    border-color: aliceblue;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-width: 1px;
+    box-shadow: 15px 15px 15px;
+    border-radius: 15px;
+}
+.login h2, .signup h2, .forgot h2, .verify h2{
+    text-align: center;
+    font-size: 32px;
+    color: aliceblue;
+}
+.login .username input, .signup .username input, .forgot .username input, .verify input{
+    position: relative;
+    width: 85%;
+    height: 15px;
+    padding: 10px;
+    margin: 15px 15px 10px 15px;
+    border-radius: 10px;
+    border-style: solid;
+    outline: none;
+    font-size: medium;
+    color: rgb(118, 119, 120);
+
+}
+.login .remember{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.login .remember a{
+    color: rgb(100, 120, 222);
+    text-decoration: none;
+}
+.login .remember a:hover{
+    text-decoration: underline whitesmoke;
+}
+.login .remember label{
+    color:aliceblue;
+}
+.login .butt button, .signup .butt button, .forgot .butt button, .verify button{
+    position: relative;
+    width: 85px;
+    left : 38%; 
+    height: 30px;
+    color: rgba(47, 47, 46, 0.941);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    outline: none;
+    background-color: rgba(152, 48, 100, 0.947);
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.login .butt button:hover, .signup .butt button:hover, .forgot .butt button:hover, .verify button:hover{
+    background-color: rgba(128, 77, 191, 0.786);
+    color: aliceblue;
+}
+.login .signup1, .signup .login1, .forgot .forgot1{
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    flex-wrap: wrap;
+}
+.login .signup1 p a, .signup .login1 p a, .forgot .forgot1 p a{
+    text-decoration: none;
+    color: rgb(100, 120, 222);
+}
+.login .signup1 a:hover, .signup .login1 a:hover, .forgot .forgot1 a:hover{
+    text-decoration: underline whitesmoke;
+}
+.signup .active{
+    visibility: visible;
+}
+.signup .inactive{
+    visibility: hidden;
+}
+.login .active{
+    visibility: visible;
+}
+.login .inactive{
+    visibility: hidden;
+}
